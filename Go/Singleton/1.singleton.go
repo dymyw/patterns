@@ -1,10 +1,5 @@
 package Singleton
 
-type singleton struct {
-}
-
-var instance *singleton
-
 // GetInstance1 获取单例
 func GetInstance1() *singleton {
 	if instance == nil {
