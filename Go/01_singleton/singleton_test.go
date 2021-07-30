@@ -9,3 +9,14 @@ func TestGetInstance(t *testing.T) {
 		t.Fatal("instance is not equal")
 	}
 }
+
+func BenchmarkGetInstance(b *testing.B) {
+	// 并行
+	b.RunParallel(func(pb *testing.PB) {
+		for pb.Next() {
+			if GetInstance() != GetInstance() {
+				b.Errorf("test fail")
+			}
+		}
+	})
+}
