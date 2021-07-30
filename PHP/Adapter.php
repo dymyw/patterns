@@ -74,5 +74,7 @@ class Adapter implements Charger
 
 // 使用
 $phone      = new Phone();
+// 适配器
 $charger    = new Adapter(new Adaptee());
+// 借助资源，完成相关的操作
 echo $phone->setCharger($charger)->charge();
