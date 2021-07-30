@@ -1,15 +1,14 @@
-package Singleton
+package singleton
 
 import "sync"
 
-// singleton 实例
-type singleton struct {
-}
+// singleton 单例结构体
+type singleton struct {}
 
-// 指向实例的指针
-var instance *singleton
-
-var once sync.Once
+var (
+	instance *singleton // 指向单例的指针
+	once sync.Once
+)
 
 // GetInstance 获取单例
 func GetInstance() *singleton {
