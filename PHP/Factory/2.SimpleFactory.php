@@ -1,7 +1,8 @@
 <?php
 
 /**
- * 简单工厂模式
+ * 简单工厂模式(Simple Factory)
+ *  本质：函数返回接口
  *  只暴露工厂类，解决了面向接口编程，暴露太多实例的问题
  *
  * Class SimpleFactory
