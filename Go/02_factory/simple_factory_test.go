@@ -1,4 +1,4 @@
-package simple_factory
+package factory
 
 import (
 	"reflect"

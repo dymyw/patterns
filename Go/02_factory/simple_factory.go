@@ -1,4 +1,4 @@
-package simple_factory
+package factory
 
 // IRuleConfigParser 配置解析规则接口
 type IRuleConfigParser interface {
@@ -8,14 +8,14 @@ type IRuleConfigParser interface {
 // jsonRuleConfigParser json 配置解析
 type jsonRuleConfigParser struct {}
 // Parse 实现 IRuleConfigParser 接口
-func (J jsonRuleConfigParser) Parse(data []byte) {
+func (j jsonRuleConfigParser) Parse(data []byte) {
 	panic("implement me")
 }
 
 // yamlRuleConfigParser yaml 配置解析
 type yamlRuleConfigParser struct {}
 // Parse 实现 IRuleConfigParser 接口
-func (J yamlRuleConfigParser) Parse(data []byte) {
+func (y yamlRuleConfigParser) Parse(data []byte) {
 	panic("implement me")
 }
 
